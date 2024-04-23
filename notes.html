@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖Bookshelf </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
 
+    <link rel="stylesheet" href="books.css">
+    <script src="book.js" defer></script>
+</head>
+<body>
+
+    <div class="navBar">
+        <h1>BookShelf📖</h1>
+    </div>
+
+    <div class="container">
+        <div class="container-child">
+            <h2>Rich Dad Poor Dad</h2>
+            <h4>Robert Kiyosaki:</h4>
+            <p> Financial education as a key determinant of success.
+                Distinguishing assets from liabilities to build wealth.
+                Shifting mindset from employee to investor mentality.
+                Making money work for you through smart investments.
+                Pursuing financial freedom through calculated risk-taking
+                </p>
+            <button onclick="deletebook(event)">delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay"></div>
+
+    <div class="popup" id="popup">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="title-input">
+            <input type="text" placeholder="Book Author" id="author-input">
+            <textarea placeholder="Short Description" id="description-input"></textarea>
+            <button id="add-book">add</button>
+            <button id="cancel-popup">cancel</button>
+        </form>
+    </div>
+
+    <button class="add-button" id="btn-add">+</button>
